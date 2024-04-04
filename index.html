@@ -9,27 +9,81 @@
 </head>
 
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <ul>
-    <li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique est fugiat sint quod reprehenderit voluptatum nobis, neque rerum quasi quia sequi quibusdam molestias commodi excepturi, eligendi minima, voluptas voluptates!</p>
-    </li>
-    <button class="btn">Lorem.</button>
-    <li>
-      <p>Quos ipsam illo voluptatem ullam maiores magnam, rerum facilis beatae aperiam iure animi magni dolores cupiditate eaque cumque hic repellat eveniet quia! Eum delectus quibusdam libero, amet facere recusandae sint.</p>
-    </li>
-    <button class="btn">Dolor?</button>
-    <li>
-      <p>Doloremque quaerat, voluptatum sint odio voluptatem similique, ut veritatis facilis labore fugit temporibus iusto deleniti earum consectetur distinctio eum. Necessitatibus architecto eaque quo debitis rem ipsam dolores aperiam alias ipsum?</p>
-    </li>
-    <button class="btn">Inventore.</button>
-    <li>
-      <p>Ipsa, consectetur corporis quod velit minus esse. Minus, minima. Ratione non praesentium deserunt, rem labore ad beatae officiis inventore, ipsa sequi nemo doloremque atque placeat, voluptatibus deleniti laudantium at voluptate?</p>
-    </li>
-    <button class="btn">Libero.</button>
-  </ul>
+  <main class="relative">
+    <!-- NAVIGATION -->
+    <nav class="bg-transparent sticky top-0 right-0 z-50">
+      <div class="flex justify-end gap-32 py-4 px-8">
+        <a href="#hero" class="text-white hover:text-gray-300">home</a>
+        <a href="#about" class="text-white hover:text-gray-300">o nas</a>
+        <a href="#projects" class="text-white hover:text-gray-300">realizacje</a>
+        <a href="#contact" class="text-white hover:text-gray-300">kontakt</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="bg-blue-900 h-svh">
+      <div class="relative bg-cover bg-center h-screen bg-[url('/public/hero_background.jpg')]">
+        <div class="absolute bottom-0 left-0 p-8">
+          <h1 class="text-white text-4xl mb-3">komunikacja,</h1>
+          <p class="text-white text-4xl">która angażuje</p>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center ">
+          <div class="size-[400px]">
+            <img src="./public/logo.svg" alt="Robie to co lubie Logo">
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ABOUT O NAS -->
+    <section id="about" class="bg-stone-400 h-svh">
+      <h1 class="text-3xl font-bold text-center text-white">O nas</h1>
+
+    </section>
+
+    <!-- PROJECTS REALIZACJE -->
+    <section id="projects" class="bg-blue-950 h-svh">
+      <h1 class="text-3xl font-bold text-center text-white">Realizacje</h1>
+
+    </section>
+
+    <!-- DETAILS SZCZEGOLY -->
+    <section id="details" class="bg-neutral-200">
+      <h1 class="text-3xl font-bold text-center text-white">Szczegóły</h1>
+      <article class="min-h-[min(600px,80svh)] bg-cover bg-center bg-[url('/public/hero_background.jpg')]">
+        <h1>This is it!</h1>
+      </article>
+      <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
+        <hr class="text-neutral-200">
+      </div>
+
+    </section>
+
+    <!-- SLOGAN -->
+    <section id="slogan" class="bg-stone-400 h-svh">
+
+      <h1 class="text-3xl font-bold text-center text-white">Slogan</h1>
+    </section>
+
+    <!-- LOGOTYPES -->
+    <section id="logotypes" class="bg-stone-400 h-svh">
+
+      <h1 class="text-3xl font-bold text-center text-white">Logotypes</h1>
+    </section>
+
+    <!-- CONTACT KONTACT -->
+    <section id="contact" class="bg-stone-400 h-svh">
+      <h1 class="text-3xl font-bold text-center text-white">Kontakt</h1>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 h-svh">
+      <h1 class="text-3xl font-bold text-center text-white">Footer</h1>
+    </footer>
+  </main>
 </body>
 
 </html>
