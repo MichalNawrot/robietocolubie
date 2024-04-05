@@ -6,31 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robietocolubie</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
-  <main class="relative">
+<body class="font-josefin">
+  <main>
     <!-- NAVIGATION -->
-    <nav class="bg-transparent sticky top-0 right-0 z-50">
-      <div class="flex justify-end gap-32 py-4 px-8">
-        <a href="#hero" class="text-white hover:text-gray-300">home</a>
-        <a href="#about" class="text-white hover:text-gray-300">o nas</a>
-        <a href="#projects" class="text-white hover:text-gray-300">realizacje</a>
-        <a href="#contact" class="text-white hover:text-gray-300">kontakt</a>
+    <nav class="bg-transparent fixed top-0 right-0 z-50 font-light p-8">
+      <div class="flex flex-wrap justify-end gap-20 text-3xl">
+        <a href="#hero" class="text-white hover:text-gray-300 text-nowrap">home</a>
+        <a href="#about" class="text-white hover:text-gray-300 text-nowrap">o nas</a>
+        <a href="#projects" class="text-white hover:text-gray-300 text-nowrap">realizacje</a>
+        <a href="#contact" class="text-white hover:text-gray-300 text-nowrap">kontakt</a>
       </div>
     </nav>
 
     <!-- HERO -->
     <section id="hero" class="bg-blue-900 h-svh">
       <div class="relative bg-cover bg-center h-screen bg-[url('/public/hero_background.jpg')]">
-        <div class="absolute bottom-0 left-0 p-8">
-          <h1 class="text-white text-4xl mb-3">komunikacja,</h1>
+        <div class="absolute bottom-0 left-0 p-8 font-medium">
+          <p class="text-white text-4xl mb-3">komunikacja,</p>
           <p class="text-white text-4xl">która angażuje</p>
         </div>
         <div class="absolute inset-0 flex items-center justify-center ">
           <div class="size-[400px]">
             <img src="./public/logo.svg" alt="Robie to co lubie Logo">
-
           </div>
         </div>
       </div>
@@ -38,22 +41,201 @@
     </section>
 
     <!-- ABOUT O NAS -->
-    <section id="about" class="bg-stone-400 h-svh">
-      <h1 class="text-3xl font-bold text-center text-white">O nas</h1>
-
+    <section id="about" class="bg-neutral-100 grid grid-cols-2 p-8 items-center">
+      <div class="about_right | flex">
+        <h1 class="text-4xl font-bold text-neutral-950 text-nowrap pr-16">o nas</h1>
+        <p class="px-12">Lorem ipsum dolor sit amet consectetur. Consequat mauris ultricies tellus ac pellentesque
+          tincidunt id mi interdum. Velit nibh ante eu elit sagittis vulputate volutpat ligula gravida. Nec in a sem
+          eget amet viverra bibendum sem posuere. Eu in etiam blandit sed mollis sodales. Dui leo ut sit viverra nisi
+          posuere. Suscipit a neque tincidunt quis diam. Tempus risus neque tempus amet. Amet ac bibendum nibh lacus
+          arcu donec. Id morbi dictum tortor leo libero dictum faucibus in augue. Phasellus dictumst porttitor hendrerit
+          nunc mauris adipiscing. Platea mauris at tincidunt eu placerat. Nam netus tempor leo justo sed ridiculus
+          pretium urna. Lorem eget egestas et sit non nunc sed. Amet at suscipit lectus diam sit integer donec. Amet hac
+          amet purus nec vitae. Fames purus amet habitant cursus a blandit. A malesuada arcu nisl.</p>
+      </div>
+      <div class="about_left">
+        <div class="bg-cover bg-center bg-[url('/public/about.jpg')] aspect-video"></div>
+      </div>
     </section>
 
     <!-- PROJECTS REALIZACJE -->
-    <section id="projects" class="bg-blue-950 h-svh">
-      <h1 class="text-3xl font-bold text-center text-white">Realizacje</h1>
+    <section id="projects" class="bg-blue-950 h-[55rem] grid grid-cols-2 p-8 py-24">
+      <div class="projects_right | flex flex-col justify-between text-neutral-100">
+        <div class="flex">
+          <h1 class="text-4xl font-bold text-center text-nowrap pr-16">realizacje</h1>
+          <p class="px-12">Lorem ipsum dolor sit amet consectetur. Consequat mauris ultricies tellus ac pellentesque
+            tincidunt id mi interdum. Velit nibh ante eu elit sagittis vulputate volutpat ligula gravida. Nec in a sem
+            eget amet viverra bibendum sem posuere. </p>
+        </div>
+        <div>
+          <img class="h-[24rem] aspect-square hover:motion-safe:animate-spin-slow hover:cursor-pointer"
+            src="/public/projects-write-us-all.svg" alt="image description">
+        </div>
+      </div>
+      <div class="projects_left | flex flex-col text-neutral-100 align-bottom">
+        <div class="grid grid-cols-3 py-8 border-y-[1px] items-baseline">
+          <p class="col-span-2 text-nowrap text-4xl font-bold">Dr. Emi's Wedding</p>
+          <p class="font-normal">Konferencja</p>
+        </div>
+        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
+          <p class="col-span-2 text-nowrap text-4xl font-bold">Ringana Convention</p>
+          <p class="font-normal">Corporate Event</p>
+        </div>
+        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
+          <p class="col-span-2 text-nowrap text-4xl font-bold">Las Vegas</p>
+          <p class="font-normal">Impreza masowa</p>
+        </div>
+        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
+          <p class="col-span-2 text-nowrap text-4xl font-bold">Karo Kauer Weihnachtsfeier</p>
+          <p class="font-normal">VIP Event</p>
+        </div>
+        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
+          <p class="col-span-2 text-nowrap text-4xl font-bold">Coca Cola Partnerabend</p>
+          <p class="font-normal">Corporate Event</p>
+        </div>
+        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
+          <p class="col-span-2 text-nowrap text-4xl font-bold">Laura Leshel’s Wedding</p>
+          <p class="font-normal">Piknik rodzinny</p>
+        </div>
+      </div>
 
     </section>
 
     <!-- DETAILS SZCZEGOLY -->
-    <section id="details" class="bg-neutral-200">
-      <h1 class="text-3xl font-bold text-center text-white">Szczegóły</h1>
-      <article class="min-h-[min(600px,80svh)] bg-cover bg-center bg-[url('/public/hero_background.jpg')]">
-        <h1>This is it!</h1>
+    <section id="details" class="bg-neutral-100">
+      <h1 class="text-4xl font-bold text-blue-900 text-nowrap pl-8 py-12">szczegóły</h1>
+      <article class="h-[600px] bg-cover bg-center bg-[url('/public/details-corporate-events.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-32">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-4xl font-medium">01</p>
+              <h2 class="text-7xl">event korporacyjny</h2>
+            </div>
+            <ul class="flex flex-col items-end">
+              <li>SHELL</li>
+              <li>Deloitte Poland</li>
+              <li>CHIO</li>
+            </ul>
+          </div>
+          <div class="flex justify-between gap-32">
+            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+              nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
+              und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
+              möchten deine Vision des Events mit dem richtigen musikalischen Act
+              zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
+              Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
+            <ul class="flex-1">
+              <li>Eine Band bzw. ein Live Act plus DJ</li>
+              <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
+              <li>Individuelle Beratung</li>
+              <li>Auswahl aus verschiedenen Musikkonzepten</li>
+              <li>Technischer Support</li>
+            </ul>
+          </div>
+        </div>
+
+      </article>
+      <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
+        <hr class="text-neutral-200">
+      </div>
+      <article class="h-[600px] bg-cover bg-center bg-[url('/public/details-incentive.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-32">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-4xl font-medium">02</p>
+              <h2 class="text-7xl">incentive</h2>
+            </div>
+            <ul class="flex flex-col items-end">
+              <li>Salesforce</li>
+              <li>BMW</li>
+            </ul>
+          </div>
+          <div class="flex justify-between gap-32">
+            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+              nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
+              und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
+              möchten deine Vision des Events mit dem richtigen musikalischen Act
+              zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
+              Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
+            <ul class="flex-1">
+              <li>Eine Band bzw. ein Live Act plus DJ</li>
+              <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
+              <li>Individuelle Beratung</li>
+              <li>Auswahl aus verschiedenen Musikkonzepten</li>
+              <li>Technischer Support</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
+        <hr class="text-neutral-200">
+      </div>
+      <article class="h-[600px] bg-cover bg-center bg-[url('/public/details-mass-events.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-32">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-4xl font-medium">03</p>
+              <h2 class="text-7xl">impreza masowa</h2>
+            </div>
+            <ul class="flex flex-col items-end">
+              <li>SHELL</li>
+              <li>Deloitte Poland</li>
+              <li>CHIO</li>
+            </ul>
+          </div>
+          <div class="flex justify-between gap-32">
+            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+              nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
+              und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
+              möchten deine Vision des Events mit dem richtigen musikalischen Act
+              zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
+              Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
+            <ul class="flex-1">
+              <li>Eine Band bzw. ein Live Act plus DJ</li>
+              <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
+              <li>Individuelle Beratung</li>
+              <li>Auswahl aus verschiedenen Musikkonzepten</li>
+              <li>Technischer Support</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
+        <hr class="text-neutral-200">
+      </div>
+      <article class="h-[600px] bg-cover bg-center bg-[url('/public/details-conferences.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-32">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-4xl font-medium">04</p>
+              <h2 class="text-7xl">konferencja</h2>
+            </div>
+            <ul class="flex flex-col items-end">
+              <li>CocaCola</li>
+              <li>Laura Leshel</li>
+              <li>Montblanc</li>
+            </ul>
+          </div>
+          <div class="flex justify-between gap-32">
+            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+              nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
+              und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
+              möchten deine Vision des Events mit dem richtigen musikalischen Act
+              zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
+              Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
+            <ul class="flex-1">
+              <li>Eine Band bzw. ein Live Act plus DJ</li>
+              <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
+              <li>Individuelle Beratung</li>
+              <li>Auswahl aus verschiedenen Musikkonzepten</li>
+              <li>Technischer Support</li>
+            </ul>
+          </div>
+        </div>
       </article>
       <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
         <hr class="text-neutral-200">
@@ -62,26 +244,77 @@
     </section>
 
     <!-- SLOGAN -->
-    <section id="slogan" class="bg-stone-400 h-svh">
-
-      <h1 class="text-3xl font-bold text-center text-white">Slogan</h1>
+    <section id="slogan" class="bg-blue-950 text-neutral-100">
+      <div class="flex justify-between px-8 py-32">
+        <div class="flex flex-col">
+          <p class="text-2xl font-normal">Gośka Nawrot</p>
+          <p class="text-sm">@robietocolubie</p>
+        </div>
+        <div>
+          <p class="text-4xl font-light">“Tworzymy komunikację, która angażuje, inspiruje i zmienia.”</p>
+        </div>
+      </div>
     </section>
 
     <!-- LOGOTYPES -->
-    <section id="logotypes" class="bg-stone-400 h-svh">
-
-      <h1 class="text-3xl font-bold text-center text-white">Logotypes</h1>
+    <section id="logotypes" class="bg-neutral-100">
+      <div class="min-h-[min(600px,80svh)] bg-cover bg-center bg-[url('/public/partners.png')]"></div>
     </section>
 
     <!-- CONTACT KONTACT -->
-    <section id="contact" class="bg-stone-400 h-svh">
+    <section id="contact" class="bg-neutral-100">
+      <div class="flex justify-between px-8 py-24 items-baseline">
+        <p class="uppercase text-4xl font-medium">Porozmawiajmy</p>
+        <div class="flex flex-col items-end text-4xl font-normal">
+          <p>+49 40 228 690</p>
+          <p>info@robietocolubie.com</p>
+        </div>
+      </div>
       <h1 class="text-3xl font-bold text-center text-white">Kontakt</h1>
 
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 h-svh">
-      <h1 class="text-3xl font-bold text-center text-white">Footer</h1>
+    <footer class="bg-zinc-900 text-neutral-100">
+      <div class="px-8 pt-24 pb-4">
+        <div class="flex justify-start gap-24">
+          <div class="flex flex-col gap-4 justify-start">
+            <h2 class="uppercase font-bold pb-4">Kontakt</h2>
+            <div>
+              <p>+49 40 228 690</p>
+              <p>info@robietocolubie.com</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 justify-start">
+            <h2 class="uppercase font-bold pb-4">Menu</h2>
+            <ul>
+              <li>Home</li>
+              <li>O nas</li>
+              <li>Co robimy?</li>
+              <li>Projekty</li>
+              <li>Napisz do nas</li>
+              <li>Warunki współpracy</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 justify-start">
+            <h2 class="uppercase font-bold pb-4">Social media</h2>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>LinkedIn</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 items-center pt-8">
+          <img class="h-24" src="/public/logo.svg" alt="Robię to co lubię logo">
+          <h1 class="uppercase text-center">copyright <span class="font-bold">robię to co lubię</span></h1>
+          <div class="uppercase flex gap-8 justify-end items-center">
+            <p>DESIGNED BY <span class="font-bold">BIGHATPOLAND</span></p>
+            <img class="h-10" src="/public/logo-bighat.png" alt="Big Hat Poland logo">
+          </div>
+        </div>
+      </div>
     </footer>
   </main>
 </body>
