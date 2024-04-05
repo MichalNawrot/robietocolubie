@@ -792,6 +792,10 @@ video {
   background-image: url('/public/partners.png');
 }
 
+.bg-\[url\(\'\.\/public\/hero_background\.jpg\'\)\] {
+  background-image: url('./public/hero_background.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
