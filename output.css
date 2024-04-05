@@ -764,36 +764,32 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/public\/about\.jpg\'\)\] {
-  background-image: url('/public/about.jpg');
+.bg-\[url\(\'\.\/public\/about\.jpg\'\)\] {
+  background-image: url('./public/about.jpg');
 }
 
-.bg-\[url\(\'\/public\/details-conferences\.jpg\'\)\] {
-  background-image: url('/public/details-conferences.jpg');
+.bg-\[url\(\'\.\/public\/details-conferences\.jpg\'\)\] {
+  background-image: url('./public/details-conferences.jpg');
 }
 
-.bg-\[url\(\'\/public\/details-corporate-events\.jpg\'\)\] {
-  background-image: url('/public/details-corporate-events.jpg');
+.bg-\[url\(\'\.\/public\/details-corporate-events\.jpg\'\)\] {
+  background-image: url('./public/details-corporate-events.jpg');
 }
 
-.bg-\[url\(\'\/public\/details-incentive\.jpg\'\)\] {
-  background-image: url('/public/details-incentive.jpg');
+.bg-\[url\(\'\.\/public\/details-incentive\.jpg\'\)\] {
+  background-image: url('./public/details-incentive.jpg');
 }
 
-.bg-\[url\(\'\/public\/details-mass-events\.jpg\'\)\] {
-  background-image: url('/public/details-mass-events.jpg');
-}
-
-.bg-\[url\(\'\/public\/hero_background\.jpg\'\)\] {
-  background-image: url('/public/hero_background.jpg');
-}
-
-.bg-\[url\(\'\/public\/partners\.png\'\)\] {
-  background-image: url('/public/partners.png');
+.bg-\[url\(\'\.\/public\/details-mass-events\.jpg\'\)\] {
+  background-image: url('./public/details-mass-events.jpg');
 }
 
 .bg-\[url\(\'\.\/public\/hero_background\.jpg\'\)\] {
   background-image: url('./public/hero_background.jpg');
+}
+
+.bg-\[url\(\'\.\/public\/partners\.png\'\)\] {
+  background-image: url('./public/partners.png');
 }
 
 .bg-cover {
