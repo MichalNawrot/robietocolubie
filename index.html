@@ -17,11 +17,11 @@
     <header>
       <!-- NAVIGATION -->
       <nav class="nav-bar">
-        <div class="flex flex-wrap justify-end gap-20 text-3xl px-8 text-neutral-100">
-          <a href="#hero" class="hover:text-gray-300">home</a>
+        <div class="hidden sm:flex flex-wrap justify-end gap-20 text-3xl px-8 text-neutral-100">
+          <a href="#hero" class="hover:text-gray-300 hover:['text-shadow: 0 0 2px #333, 0 0 2px #333']">home</a>
           <a href="#about" class="hover:text-gray-300 ">o nas</a>
-          <a href="#projects" class="hover:text-gray-300">realizacje</a>
-          <a href="#contact" class="hover:text-gray-300">kontakt</a>
+          <a href="#projects" class="hover:text-gray-300 ">realizacje</a>
+          <a href="#contact" class="hover:text-gray-300 ">kontakt</a>
         </div>
       </nav>
     </header>
@@ -34,7 +34,7 @@
           <p>która angażuje</p>
         </div>
         <div class="absolute inset-0 flex items-center justify-center ">
-          <div class="size-[400px]">
+          <div class="size-[min(50vw,50svh)]">
             <img src="./public/logo.svg" alt="Robie to co lubie Logo">
           </div>
         </div>
@@ -43,10 +43,11 @@
     </section>
 
     <!-- ABOUT O NAS -->
-    <section id="about" class="bg-neutral-100 grid grid-cols-2 p-8 items-center">
-      <div class="about_right | flex">
-        <h1 class="text-4xl font-bold text-neutral-950 text-nowrap pr-16">o nas</h1>
-        <p class="px-12">Lorem ipsum dolor sit amet consectetur. Consequat mauris ultricies tellus ac pellentesque
+    <section id="about" class="bg-neutral-100 lg:grid lg:grid-cols-2 p-8 items-center">
+      <div class="about_right | flex flex-wrap sm:flex-nowrap justify-between pb-8 lg:pb-0">
+        <h1 class="text-4xl font-bold text-neutral-950 text-nowrap pr-12 pb-8 sm:pb-0">o nas</h1>
+        <p class="pr-12 text-base sm:text-lg max-w-prose">Lorem ipsum dolor sit amet consectetur. Consequat mauris
+          ultricies tellus ac pellentesque
           tincidunt id mi interdum. Velit nibh ante eu elit sagittis vulputate volutpat ligula gravida. Nec in a sem
           eget amet viverra bibendum sem posuere. Eu in etiam blandit sed mollis sodales. Dui leo ut sit viverra nisi
           posuere. Suscipit a neque tincidunt quis diam. Tempus risus neque tempus amet. Amet ac bibendum nibh lacus
@@ -61,42 +62,43 @@
     </section>
 
     <!-- PROJECTS REALIZACJE -->
-    <section id="projects" class="bg-blue-950 h-[55rem] grid grid-cols-2 p-8 py-24">
+    <section id="projects" class="bg-blue-950 xl:grid xl:grid-cols-2 px-8 py-24">
       <div class="projects_right | flex flex-col justify-between text-neutral-100">
-        <div class="flex">
-          <h1 class="text-4xl font-bold text-center text-nowrap pr-16">realizacje</h1>
-          <p class="px-12">Lorem ipsum dolor sit amet consectetur. Consequat mauris ultricies tellus ac pellentesque
+        <div class="flex flex-wrap sm:flex-nowrap justify-between">
+          <h1 class="text-4xl font-bold text-center text-nowrap pr-12 pb-8 sm:pb-0">realizacje</h1>
+          <p class="pr-12 text-base sm:text-lg max-w-prose">Lorem ipsum dolor sit amet consectetur. Consequat mauris
+            ultricies tellus ac pellentesque
             tincidunt id mi interdum. Velit nibh ante eu elit sagittis vulputate volutpat ligula gravida. Nec in a sem
             eget amet viverra bibendum sem posuere. </p>
         </div>
-        <div>
-          <img class="h-[24rem] aspect-square hover:motion-safe:animate-spin-slow hover:cursor-pointer"
+        <div class="pt-8 xl:pt-0">
+          <img class="h-[12rem] xl:h-[24rem] aspect-square hover:motion-safe:animate-spin-slow hover:cursor-pointer"
             src="./public/projects-write-us-all.svg" alt="image description">
         </div>
       </div>
-      <div class="projects_left | flex flex-col text-neutral-100 align-bottom">
-        <div class="grid grid-cols-3 py-8 border-y-[1px] items-baseline">
-          <p class="col-span-2 text-nowrap text-4xl font-bold">Dr. Emi's Wedding</p>
+      <div class="projects_left | flex flex-col text-neutral-100 align-bottom pt-8 xl:pt-0">
+        <div class="md:grid md:grid-cols-4 py-4 sm:py-8 border-y-[1px] items-baseline">
+          <p class="col-span-3 text-nowrap text-2xl sm:text-4xl font-bold">Dr. Emi's Wedding</p>
           <p class="font-normal">Konferencja</p>
         </div>
-        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
-          <p class="col-span-2 text-nowrap text-4xl font-bold">Ringana Convention</p>
+        <div class="md:grid md:grid-cols-4 py-4 sm:py-8 border-b-[1px] items-baseline">
+          <p class="col-span-3 text-nowrap text-2xl sm:text-4xl font-bold">Ringana Convention</p>
           <p class="font-normal">Corporate Event</p>
         </div>
-        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
-          <p class="col-span-2 text-nowrap text-4xl font-bold">Las Vegas</p>
+        <div class="md:grid md:grid-cols-4 py-4 sm:py-8 border-b-[1px] items-baseline">
+          <p class="col-span-3 text-nowrap text-2xl sm:text-4xl font-bold">Las Vegas</p>
           <p class="font-normal">Impreza masowa</p>
         </div>
-        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
-          <p class="col-span-2 text-nowrap text-4xl font-bold">Karo Kauer Weihnachtsfeier</p>
+        <div class="md:grid md:grid-cols-4 py-4 sm:py-8 border-b-[1px] items-baseline">
+          <p class="col-span-3 text-nowrap text-2xl sm:text-4xl font-bold">Karo Kauer Weihnachtsfeier</p>
           <p class="font-normal">VIP Event</p>
         </div>
-        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
-          <p class="col-span-2 text-nowrap text-4xl font-bold">Coca Cola Partnerabend</p>
+        <div class="md:grid md:grid-cols-4 py-4 sm:py-8 border-b-[1px] items-baseline">
+          <p class="col-span-3 text-nowrap text-2xl sm:text-4xl font-bold">Coca Cola Partnerabend</p>
           <p class="font-normal">Corporate Event</p>
         </div>
-        <div class="grid grid-cols-3 py-8 border-b-[1px] items-baseline">
-          <p class="col-span-2 text-nowrap text-4xl font-bold">Laura Leshel’s Wedding</p>
+        <div class="md:grid md:grid-cols-4 py-4 sm:py-8 border-b-[1px] items-baseline">
+          <p class="col-span-3 text-nowrap text-2xl sm:text-4xl font-bold">Laura Leshel’s Wedding</p>
           <p class="font-normal">Piknik rodzinny</p>
         </div>
       </div>
@@ -107,28 +109,27 @@
     <section id="details" class="bg-neutral-100">
       <h1 class="text-4xl font-bold text-blue-900 text-nowrap pl-8 py-12">szczegóły</h1>
       <article
-        class="h-[600px] bg-cover bg-center bg-[url('./public/details-corporate-events.jpg')] p-8 text-neutral-100 bg-blue-950">
-        <div class="flex flex-col justify-between gap-32">
-
-          <div class="flex justify-between items-center">
+        class="bg-cover bg-center bg-[url('./public/details-corporate-events.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-16 sm:gap-32">
+          <div class="flex flex-wrap sm:flex-nowrap justify-between items-center gap-8">
             <div>
-              <p class="text-4xl font-medium">01</p>
-              <h2 class="text-7xl">event korporacyjny</h2>
+              <p class="text-2xl sm:text-4xl font-medium">01</p>
+              <h2 class="text-5xl sm:text-7xl">event korporacyjny</h2>
             </div>
-            <ul class="flex flex-col items-end">
+            <ul class="flex sm:flex-col sm:items-end text-nowrap justify-between gap-8 sm:gap-0 text-base sm:text-lg">
               <li>SHELL</li>
               <li>Deloitte Poland</li>
               <li>CHIO</li>
             </ul>
           </div>
-          <div class="flex justify-between gap-32">
-            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+          <div class="flex flex-wrap lg:flex-nowrap justify-between gap-10 lg:gap-32">
+            <p class="text-base sm:text-lg max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
               nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
               und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
               möchten deine Vision des Events mit dem richtigen musikalischen Act
               zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
               Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
-            <ul class="flex-1">
+            <ul class="text-base sm:text-lg">
               <li>Eine Band bzw. ein Live Act plus DJ</li>
               <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
               <li>Individuelle Beratung</li>
@@ -142,28 +143,26 @@
       <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
         <hr class="text-neutral-200">
       </div>
-      <article
-        class="h-[600px] bg-cover bg-center bg-[url('./public/details-incentive.jpg')] p-8 text-neutral-100 bg-blue-950">
-        <div class="flex flex-col justify-between gap-32">
-
-          <div class="flex justify-between items-center">
+      <article class="bg-cover bg-center bg-[url('./public/details-incentive.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-16 sm:gap-32">
+          <div class="flex flex-wrap sm:flex-nowrap justify-between items-center gap-8">
             <div>
-              <p class="text-4xl font-medium">02</p>
-              <h2 class="text-7xl">incentive</h2>
+              <p class="text-2xl sm:text-4xl font-medium">02</p>
+              <h2 class="text-5xl sm:text-7xl">incentive</h2>
             </div>
-            <ul class="flex flex-col items-end">
+            <ul class="flex sm:flex-col sm:items-end text-nowrap justify-between gap-8 sm:gap-0 text-base sm:text-lg">
               <li>Salesforce</li>
               <li>BMW</li>
             </ul>
           </div>
-          <div class="flex justify-between gap-32">
-            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+          <div class="flex flex-wrap lg:flex-nowrap justify-between gap-10 lg:gap-32">
+            <p class="text-base sm:text-lg max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
               nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
               und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
               möchten deine Vision des Events mit dem richtigen musikalischen Act
               zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
               Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
-            <ul class="flex-1">
+            <ul class="text-base sm:text-lg">
               <li>Eine Band bzw. ein Live Act plus DJ</li>
               <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
               <li>Individuelle Beratung</li>
@@ -176,29 +175,27 @@
       <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
         <hr class="text-neutral-200">
       </div>
-      <article
-        class="h-[600px] bg-cover bg-center bg-[url('./public/details-mass-events.jpg')] p-8 text-neutral-100 bg-blue-950">
-        <div class="flex flex-col justify-between gap-32">
-
-          <div class="flex justify-between items-center">
+      <article class="bg-cover bg-center bg-[url('./public/details-mass-events.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-16 sm:gap-32">
+          <div class="flex flex-wrap sm:flex-nowrap justify-between items-center gap-8">
             <div>
-              <p class="text-4xl font-medium">03</p>
-              <h2 class="text-7xl">impreza masowa</h2>
+              <p class="text-2xl sm:text-4xl font-medium">03</p>
+              <h2 class="text-5xl sm:text-7xl">impreza masowa</h2>
             </div>
-            <ul class="flex flex-col items-end">
+            <ul class="flex sm:flex-col sm:items-end text-nowrap justify-between gap-8 sm:gap-0 text-base sm:text-lg">
               <li>SHELL</li>
               <li>Deloitte Poland</li>
               <li>CHIO</li>
             </ul>
           </div>
-          <div class="flex justify-between gap-32">
-            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+          <div class="flex flex-wrap lg:flex-nowrap justify-between gap-10 lg:gap-32">
+            <p class="text-base sm:text-lg max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
               nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
               und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
               möchten deine Vision des Events mit dem richtigen musikalischen Act
               zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
               Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
-            <ul class="flex-1">
+            <ul class="text-base sm:text-lg">
               <li>Eine Band bzw. ein Live Act plus DJ</li>
               <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
               <li>Individuelle Beratung</li>
@@ -211,29 +208,25 @@
       <div class="h-[clamp(48px,5vh,100px)] bg-blue-950 grid items-center px-8">
         <hr class="text-neutral-200">
       </div>
-      <article
-        class="h-[600px] bg-cover bg-center bg-[url('./public/details-conferences.jpg')] p-8 text-neutral-100 bg-blue-950">
-        <div class="flex flex-col justify-between gap-32">
-
-          <div class="flex justify-between items-center">
+      <article class="bg-cover bg-center bg-[url('./public/details-conferences.jpg')] p-8 text-neutral-100 bg-blue-950">
+        <div class="flex flex-col justify-between gap-16 sm:gap-32">
+          <div class="flex flex-wrap sm:flex-nowrap justify-between items-center gap-8">
             <div>
-              <p class="text-4xl font-medium">04</p>
-              <h2 class="text-7xl">konferencja</h2>
+              <p class="text-2xl sm:text-4xl font-medium">04</p>
+              <h2 class="text-5xl sm:text-7xl">konferencja</h2>
             </div>
-            <ul class="flex flex-col items-end">
-              <li>CocaCola</li>
-              <li>Laura Leshel</li>
+            <ul class="flex sm:flex-col sm:items-end text-nowrap justify-between gap-8 sm:gap-0 text-base sm:text-lg">
               <li>Montblanc</li>
             </ul>
           </div>
-          <div class="flex justify-between gap-32">
-            <p class="flex-1 max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
+          <div class="flex flex-wrap lg:flex-nowrap justify-between gap-10 lg:gap-32">
+            <p class="text-base sm:text-lg max-w-[50ch]">Jedes Event benötigt Musik, egal in welchem Rahmen. Es ist allerdings
               nicht die Masse an Live-Musik, sondern die Qualität der KünstlerInnen
               und der richtige Act zur richtigen Zeit, die den Unterschied ausmacht. Wir
               möchten deine Vision des Events mit dem richtigen musikalischen Act
               zum richtigen Moment verwirklichen. Gemeinsam besprechen wir dein
               Konzept und bieten dir auf Basis dessen mehrere Optionen.</p>
-            <ul class="flex-1">
+            <ul class="text-base sm:text-lg">
               <li>Eine Band bzw. ein Live Act plus DJ</li>
               <li>Bandgröße von 3 bis 14 KünstlerInnen</li>
               <li>Individuelle Beratung</li>
@@ -251,7 +244,7 @@
 
     <!-- SLOGAN -->
     <section id="slogan" class="bg-blue-950 text-neutral-100">
-      <div class="flex justify-between px-8 py-32">
+      <div class="flex flex-wrap-reverse lg:flex-nowrap justify-between px-8 py-16 lg:py-32 gap-8">
         <div class="flex flex-col">
           <p class="text-2xl font-normal">Gośka Nawrot</p>
           <p class="text-sm">@robietocolubie</p>
@@ -269,30 +262,28 @@
 
     <!-- CONTACT KONTACT -->
     <section id="contact" class="bg-neutral-100">
-      <div class="flex justify-between px-8 py-24 items-baseline">
-        <p class="uppercase text-4xl font-medium">Porozmawiajmy</p>
-        <div class="flex flex-col items-end text-4xl font-normal">
-          <p>+49 40 228 690</p>
-          <p>info@robietocolubie.com</p>
+      <div class="flex flex-col lg:flex-row lg:flex-nowrap gap-8 justify-between px-8 py-24 items-baseline">
+        <p class="uppercase text-3xl md:text-4xl font-medium">Porozmawiajmy</p>
+        <div class="flex flex-col sm:flex-row justify-between lg:flex-col lg:items-end text-2xl md:text-4xl font-normal w-full sm:gap-8">
+          <p class="text-nowrap">+49 40 228 690</p>
+          <p class="">info@robietocolubie.com</p>
         </div>
       </div>
-      <h1 class="text-3xl font-bold text-center text-white">Kontakt</h1>
-
     </section>
 
     <!-- FOOTER -->
     <footer class="bg-zinc-900 text-neutral-100">
       <div class="px-8 pt-24 pb-4">
-        <div class="flex justify-start gap-24">
+        <div class="flex flex-wrap sm:flex-nowrap justify-between md:justify-start gap-8 md:gap-24">
           <div class="flex flex-col gap-4 justify-start">
-            <h2 class="uppercase font-bold pb-4">Kontakt</h2>
+            <h2 class="uppercase font-bold md:pb-4">Kontakt</h2>
             <div>
               <p>+49 40 228 690</p>
               <p>info@robietocolubie.com</p>
             </div>
           </div>
           <div class="flex flex-col gap-4 justify-start">
-            <h2 class="uppercase font-bold pb-4">Menu</h2>
+            <h2 class="uppercase font-bold md:pb-4">Menu</h2>
             <ul>
               <li>Home</li>
               <li>O nas</li>
@@ -303,7 +294,7 @@
             </ul>
           </div>
           <div class="flex flex-col gap-4 justify-start">
-            <h2 class="uppercase font-bold pb-4">Social media</h2>
+            <h2 class="uppercase font-bold md:pb-4">Social media</h2>
             <ul>
               <li>Facebook</li>
               <li>Instagram</li>
@@ -312,12 +303,12 @@
             </ul>
           </div>
         </div>
-        <div class="grid grid-cols-3 items-center pt-8">
-          <img class="h-24" src="./public/logo.svg" alt="Robię to co lubię logo">
-          <h1 class="uppercase text-center">copyright <span class="font-bold">robię to co lubię</span></h1>
-          <div class="uppercase flex gap-8 justify-end items-center">
+        <div class="flex flex-col flex-wrap justify-center gap-2 md:grid md:grid-cols-3 items-center pt-8 text-xs lg:text-base ">
+          <img class="h-16 lg:h-24" src="./public/logo.svg" alt="Robię to co lubię logo">
+          <h1 class="uppercase md:text-center">copyright <span class="font-bold">robię to co lubię</span></h1>
+          <div class="uppercase flex gap-2 lg:gap-4 md:justify-end items-center">
             <p>DESIGNED BY <span class="font-bold">BIGHATPOLAND</span></p>
-            <img class="h-10" src="./public/logo-bighat.png" alt="Big Hat Poland logo">
+            <img class="h-6 lg:h-10" src="./public/logo-bighat.png" alt="Big Hat Poland logo">
           </div>
         </div>
       </div>
