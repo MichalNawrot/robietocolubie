@@ -5,3 +5,28 @@
 .btn {
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
 }
+
+.nav-bar {
+    --_animationStartsAfter: 50vh;
+    --_animationDistance: 200px;
+    --_surfaceColorStart: transparent;
+    --_surfaceColorEnd: hsl(0 50% 90% / 0.1);
+    --_textColorStart: rgb(245, 245, 245);
+    --_textColorEnd: rgb(245, 245, 245);
+
+    @apply fixed z-50 font-light pt-4 pb-2 w-fit animate-sticky-nav;
+    top:0;
+    right:0;
+
+    color: var(--_textColorStart);
+    background-color: var(--_surfaceColorStart);
+
+    border-radius: 100vw;
+    backdrop-filter: blur(0.0rem);
+
+    @supports (animation-timeline: view()) {
+        animation-timeline: view();
+        animation-range-start: calc(100vh + var(--_animationStartsAfter));
+        animation-range-end: calc(100vh + var(--_animationStartsAfter) + var(--_animationDistance));
+    }
+}
