@@ -15,8 +15,8 @@
     --_textColorEnd: rgb(245, 245, 245);
 
     @apply fixed z-50 font-light pt-4 pb-2 w-fit animate-sticky-nav;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 
     color: var(--_textColorStart);
     background-color: var(--_surfaceColorStart);
@@ -29,4 +29,31 @@
         animation-range-start: calc(100vh + var(--_animationStartsAfter));
         animation-range-end: calc(100vh + var(--_animationStartsAfter) + var(--_animationDistance));
     }
+}
+
+.ham-nav-bar {
+
+    @apply fixed z-50 font-light pt-4 pb-2 w-fit;
+
+    top: 0.5rem;
+    right: 0.5rem;
+
+    color: rgb(245, 245, 245);
+    background-color:  hsl(0 50% 90% / 0.1);
+    border-radius: 3rem;
+    backdrop-filter: blur(0.35rem);
+    box-shadow: 'inset 0 0 0.5rem hsla(0, 0%, 100%, 0.1), 0 0 0.75rem hsla(0, 0%, 0%, 0.3)';
+}
+
+.tham-inner {
+    @apply bg-neutral-100
+}
+
+.menu-item::before {
+    display: block;
+    content: attr(data-title);
+    @apply font-medium;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }

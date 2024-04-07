@@ -16,12 +16,29 @@
   <main>
     <header>
       <!-- NAVIGATION -->
-      <nav class="nav-bar">
+      <nav class="desktop-menu | nav-bar">
         <div class="hidden sm:flex flex-wrap justify-end gap-20 text-3xl px-8 text-neutral-100">
-          <a href="#hero" class="hover:text-gray-300 hover:['text-shadow: 0 0 2px #333, 0 0 2px #333']">home</a>
-          <a href="#about" class="hover:text-gray-300 ">o nas</a>
-          <a href="#projects" class="hover:text-gray-300 ">realizacje</a>
-          <a href="#contact" class="hover:text-gray-300 ">kontakt</a>
+          <a href="#hero" class="menu-item | hover:text-gray-300  hover:font-medium" data-title="home">home</a>
+          <a href="#about" class="menu-item | hover:text-gray-300  hover:font-medium" data-title="o nas">o nas</a>
+          <a href="#projects" class="menu-item | hover:text-gray-300  hover:font-medium"
+            data-title="realizacje">realizacje</a>
+          <a href="#contact" class="menu-item | hover:text-gray-300  hover:font-medium" data-title="kontakt">kontakt</a>
+        </div>
+      </nav>
+      <nav class="mobile-menu | ham-nav-bar sm:hidden">
+        <div class="mobile-menu__hamburger | h-[36px] flex justify-end w-full pt-1 px-3">
+          <div class="tham tham-e-spin tham-w-9 text-neutral-100">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile-menu__content | flex flex-col gap-4 items-center justify-center text-3xl px-8 text-neutral-100 select-none hidden">
+          <a href="#hero" class="menu-item | hover:text-gray-300 hover:font-medium" data-title="home">home</a>
+          <a href="#about" class="menu-item | hover:text-gray-300 hover:font-medium" data-title="o nas">o nas</a>
+          <a href="#projects" class="menu-item | hover:text-gray-300 hover:font-medium" data-title="realizacje">realizacje</a>
+          <a href="#contact" class="menu-item | hover:text-gray-300 hover:font-medium" data-title="kontakt">kontakt</a>
         </div>
       </nav>
     </header>
@@ -43,7 +60,7 @@
     </section>
 
     <!-- ABOUT O NAS -->
-    <section id="about" class="bg-neutral-100 lg:grid lg:grid-cols-2 p-8 items-center">
+    <section id="about" class="bg-neutral-100 lg:grid lg:grid-cols-2 p-8 pt-24 items-center">
       <div class="about_right | flex flex-wrap sm:flex-nowrap justify-between pb-8 lg:pb-0">
         <h1 class="text-4xl font-bold text-neutral-950 text-nowrap pr-12 pb-8 sm:pb-0">o nas</h1>
         <p class="pr-12 text-base sm:text-lg max-w-prose">Lorem ipsum dolor sit amet consectetur. Consequat mauris
@@ -314,6 +331,15 @@
       </div>
     </footer>
   </main>
+  <script>
+    const tham = document.querySelector(".tham");
+    const hamMenu = document.querySelector(".mobile-menu__content");
+
+    tham.addEventListener('click', () => {
+      tham.classList.toggle('tham-active');
+      hamMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>
