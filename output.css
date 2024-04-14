@@ -1764,6 +1764,11 @@ video {
   grid-column: span 3 / span 3;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1791,6 +1796,10 @@ video {
 .size-\[min\(50vw\2c 50svh\)\] {
   width: min(50vw,50svh);
   height: min(50vw,50svh);
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-16 {
@@ -1821,8 +1830,16 @@ video {
   min-height: min(600px,80svh);
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-\[50ch\] {
@@ -1875,6 +1892,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1897,6 +1918,12 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .text-nowrap {
@@ -1968,6 +1995,10 @@ video {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -1975,6 +2006,11 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8 {
@@ -2000,6 +2036,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-4 {
@@ -2065,6 +2106,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -2266,6 +2312,10 @@ video {
     display: none;
   }
 
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -2294,6 +2344,11 @@ video {
     gap: 2rem;
   }
 
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -2317,11 +2372,20 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:grid {
     display: grid;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
   }
 
   .md\:grid-cols-3 {
@@ -2399,6 +2463,11 @@ video {
     gap: 1rem;
   }
 
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .lg\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -2417,6 +2486,10 @@ video {
 @media (min-width: 1280px) {
   .xl\:grid {
     display: grid;
+  }
+
+  .xl\:h-28 {
+    height: 7rem;
   }
 
   .xl\:h-\[24rem\] {
