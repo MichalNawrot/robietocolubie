@@ -2001,14 +2001,6 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/public\/warner-music-poland\/unboxing\/hero\.jpg\'\)\] {
-  background-image: url('../public/warner-music-poland/unboxing/hero.jpg');
-}
-
-.bg-\[url\(\'\.\.\/public\/warner-music-poland\/unboxing\/main\.jpg\'\)\] {
-  background-image: url('../public/warner-music-poland/unboxing/main.jpg');
-}
-
 .bg-\[url\(\'\.\/public\/about\.jpg\'\)\] {
   background-image: url('./public/about.jpg');
 }
@@ -2031,6 +2023,14 @@ video {
 
 .bg-\[url\(\'\.\/public\/hero_background\.jpg\'\)\] {
   background-image: url('./public/hero_background.jpg');
+}
+
+.bg-\[url\(\'\.\/public\/warner-music-poland\/unboxing\/hero\.jpg\'\)\] {
+  background-image: url('./public/warner-music-poland/unboxing/hero.jpg');
+}
+
+.bg-\[url\(\'\.\/public\/warner-music-poland\/unboxing\/main\.jpg\'\)\] {
+  background-image: url('./public/warner-music-poland/unboxing/main.jpg');
 }
 
 .bg-cover {
