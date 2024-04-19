@@ -2372,17 +2372,17 @@ video {
 
 .modal-content {
   position: relative;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .close {
   position: absolute;
-  top: 3rem;
-  right: 4rem;
+  top: 1rem;
+  right: 1.5rem;
 }
 
 .modal-img {
-  max-height: 80svh;
+  max-height: 95svh;
 }
 
 .hover\:cursor-pointer:hover {
