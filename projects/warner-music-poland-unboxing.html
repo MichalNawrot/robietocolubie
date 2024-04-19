@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robietocolubie</title>
+  <link href="../output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-josefin">
+  <main>
+    <header>
+      <!-- NAVIGATION -->
+      <nav class="desktop-menu | nav-bar">
+        <div class="hidden sm:flex flex-wrap justify-end gap-20 text-3xl px-8 text-neutral-100">
+          <a href="../index.html#hero" class="menu-item | hover:text-gray-300  hover:font-medium"
+            data-title="home">home</a>
+          <a href="../index.html#about" class="menu-item | hover:text-gray-300  hover:font-medium" data-title="o nas">o
+            nas</a>
+          <a href="../index.html#projects" class="menu-item | hover:text-gray-300  hover:font-medium"
+            data-title="realizacje">realizacje</a>
+          <a href="../index.html#contact" class="menu-item | hover:text-gray-300  hover:font-medium"
+            data-title="kontakt">kontakt</a>
+        </div>
+      </nav>
+      <nav class="mobile-menu | ham-nav-bar sm:hidden">
+        <div class="mobile-menu__hamburger | h-[36px] flex justify-end w-full pt-1 px-3">
+          <div class="tham tham-e-spin tham-w-9 text-neutral-100">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile-menu__content | flex flex-col gap-4 items-center justify-center text-3xl px-8 text-neutral-100 select-none hidden">
+          <a href="../index.html#hero" class="menu-item | hover:text-gray-300 hover:font-medium"
+            data-title="home">home</a>
+          <a href="../index.html#about" class="menu-item | hover:text-gray-300 hover:font-medium" data-title="o nas">o
+            nas</a>
+          <a href="../index.html#projects" class="menu-item | hover:text-gray-300 hover:font-medium"
+            data-title="realizacje">realizacje</a>
+          <a href="../index.html#contact" class="menu-item | hover:text-gray-300 hover:font-medium"
+            data-title="kontakt">kontakt</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="project-hero" class="bg-blue-900">
+      <div class="relative bg-cover bg-center h-svh bg-[url('../public/warner-music-poland/unboxing/hero.jpg')]">
+        <div class="absolute inset-0 grid place-content-center p-4 text-white text-7xl uppercase font-bold">
+          <p class="text-center">Warner Music Poland Unboxing</p>
+        </div>
+        <div class="absolute bottom-0 left-0 p-8 font-medium text-white text-4xl ">
+          <p class="mb-3">komunikacja,</p>
+          <p>która angażuje</p>
+        </div>
+        <div class="absolute inset-0 flex items-left justify-left p-4 ">
+          <div class="size-[min(20vw,20svh)]">
+            <img src="../public/logo.svg" alt="Robie to co lubie Logo">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- OPIS PROJEKTU DETAILS -->
+    <section id="project-details" class="bg-neutral-100 p-8 pt-12">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="flex flex-wrap justify-between gap-x-8 gap-y-4">
+          <div>
+            <p class="text-2xl">Klient:</p>
+            <p class="uppercase text-5xl">Warner Music Poland</p>
+          </div>
+          <div class="md:text-right">
+            <p class="text-2xl">Warszawa</p>
+            <p class="text-2xl">Styczeń 2023</p>
+          </div>
+        </div>
+        <div class="lg:grid lg:grid-cols-3">
+          <p class="pt-4 text-2xl max-w-prose lg:col-start-2 lg:col-span-2">"Unboxing" było unikalnym wydarzeniem
+            korporacyjnym zorganizowanym dla Warner Music Polska przez agencję
+            eventową Robiętocolubię. Zespół agencji pracował z pasją i zaangażowaniem, aby stworzyć niezapomniane
+            doświadczenie dla uczestników, począwszy od koncepcji i kreacji tematu aż po szczegóły takie jak logistyka,
+            catering i dekoracje. Agencja opracowała innowacyjne rozwiązania technologiczne, takie jak interaktywne
+            prezentacje i multimedia, które wzbogaciły atmosferę wydarzenia. Oprócz profesjonalnej obsługi technicznej i
+            logistycznej, skupiono się na zapewnieniu wysokiej jakości doświadczeń dla gości, pozostawiając pozytywne
+            wrażenie o marce Warner Music Polska. "Unboxing" to doskonały przykład zdolności agencji do dostosowania się
+            do unikalnych potrzeb klienta i tworzenia wyjątkowych rozwiązań eventowych.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GŁÓWNY KONTENT MAIN -->
+    <section id="project-main" class="bg-blue-900">
+      <div class="relative bg-cover bg-bottom h-[50svh] bg-[url('../public/warner-music-poland/unboxing/main.jpg')]">
+    </section>
+
+    <!-- GALERIA GALLERY -->
+    <section id="project-gallery" class="bg-neutral-100">
+      <div class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/1.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/1.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/2.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/2.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/3.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/3.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/4.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/4.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/5.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/5.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/6.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/6.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/7.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/7.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/8.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/8.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/9.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/9.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/10.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/10.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/11.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/11.jpg')">
+            </div>
+            <div class="">
+              <img src="../public/warner-music-poland/unboxing/12.jpg" alt="Warner Music Poland Unboxing"
+                class="rounded-lg h-64 object-cover cursor-pointer"
+                onclick="openModal('../public/warner-music-poland/unboxing/12.jpg')">
+            </div>
+
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close cursor-pointer text-white text-5xl" onclick="closeModal()">&times;</span>
+          <img id="modalImg" class="modal-img" src="" alt="Modal Image">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-900 text-neutral-100">
+      <div class="px-8 pt-24 pb-4">
+        <div class="flex flex-wrap sm:flex-nowrap justify-between md:justify-start gap-8 md:gap-24">
+          <div class="flex flex-col gap-4 justify-start">
+            <h2 class="uppercase font-bold md:pb-4">Kontakt</h2>
+            <div>
+              <p>+48 607 631 436</p>
+              <p><a href="mailto:biuro@robietocolubie.pl">biuro@robietocolubie.pl</a></p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 justify-start">
+            <h2 class="uppercase font-bold md:pb-4">Menu</h2>
+            <ul>
+              <li><a href="../index.html#hero">Home</a></li>
+              <li><a href="../index.html#about">O nas</a></li>
+              <li><a href="../index.html#projects">Realizacje</a></li>
+              <li><a href="../index.html#contact">Porozmawiajmy</a></li>
+              <li><a href="../index.html#">Warunki współpracy</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 justify-start">
+            <h2 class="uppercase font-bold md:pb-4">Social media</h2>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-wrap justify-center gap-2 md:grid md:grid-cols-3 items-center pt-8 text-xs lg:text-base ">
+          <img class="h-16 lg:h-24" src="../public/logo.svg" alt="Robię to co lubię logo">
+          <h1 class="uppercase md:text-center">copyright <span class="font-bold">robiętocolubię</span></h1>
+          <div class="uppercase flex gap-2 lg:gap-4 md:justify-end items-center">
+            <p>DESIGNED BY <span class="font-bold">BIGHATPOLAND</span></p>
+            <img class="h-6 lg:h-10" src="../public/logo-bighat.png" alt="Big Hat Poland logo">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script>
+    const tham = document.querySelector(".tham");
+    const hamMenu = document.querySelector(".mobile-menu__content");
+
+    tham.addEventListener('click', () => {
+      tham.classList.toggle('tham-active');
+      hamMenu.classList.toggle('hidden');
+    });
+
+    // Function to open the modal and display the clicked image
+    function openModal(imageUrl) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = imageUrl;
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+
+    // Close the modal when clicking outside the modal content
+    window.onclick = function (event) {
+      var modal = document.getElementById("myModal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+
+</html>

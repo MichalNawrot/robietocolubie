@@ -1793,6 +1793,11 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.size-\[min\(20vw\2c 20svh\)\] {
+  width: min(20vw,20svh);
+  height: min(20vw,20svh);
+}
+
 .size-\[min\(50vw\2c 50svh\)\] {
   width: min(50vw,50svh);
   height: min(50vw,50svh);
@@ -1806,12 +1811,20 @@ video {
   height: 1.5rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-\[12rem\] {
   height: 12rem;
 }
 
 .h-\[36px\] {
   height: 36px;
+}
+
+.h-\[50svh\] {
+  height: 50svh;
 }
 
 .h-\[clamp\(48px\2c 5vh\2c 100px\)\] {
@@ -1846,10 +1859,22 @@ video {
   max-width: 65ch;
 }
 
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1862,6 +1887,10 @@ video {
 
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .items-center {
@@ -1916,6 +1945,15 @@ video {
   gap: 2rem;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .gap-y-8 {
   row-gap: 2rem;
 }
@@ -1928,6 +1966,10 @@ video {
 
 .text-nowrap {
   text-wrap: nowrap;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border-y-\[1px\] {
@@ -1959,6 +2001,14 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/public\/warner-music-poland\/unboxing\/hero\.jpg\'\)\] {
+  background-image: url('../public/warner-music-poland/unboxing/hero.jpg');
+}
+
+.bg-\[url\(\'\.\.\/public\/warner-music-poland\/unboxing\/main\.jpg\'\)\] {
+  background-image: url('../public/warner-music-poland/unboxing/main.jpg');
+}
+
 .bg-\[url\(\'\.\/public\/about\.jpg\'\)\] {
   background-image: url('./public/about.jpg');
 }
@@ -1987,12 +2037,25 @@ video {
   background-size: cover;
 }
 
+.bg-bottom {
+  background-position: bottom;
+}
+
 .bg-center {
   background-position: center;
 }
 
 .bg-top {
   background-position: top;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-8 {
@@ -2059,8 +2122,16 @@ video {
   padding-top: 0.25rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-8 {
@@ -2096,6 +2167,11 @@ video {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -2258,7 +2334,7 @@ video {
   top: 0.5rem;
   right: 0.5rem;
   color: rgb(245, 245, 245);
-  background-color:  hsl(0 50% 90% / 0.1);
+  background-color: hsl(0 50% 90% / 0.1);
   border-radius: 3rem;
   -webkit-backdrop-filter: blur(0.35rem);
           backdrop-filter: blur(0.35rem);
@@ -2277,6 +2353,36 @@ video {
   height: 0;
   overflow: hidden;
   visibility: hidden;
+}
+
+/* Custom styles for the modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  padding: 3rem;
+}
+
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+}
+
+.modal-img {
+  max-height: 80svh;
 }
 
 .hover\:cursor-pointer:hover {
@@ -2315,6 +2421,10 @@ video {
 
   .sm\:max-h-16 {
     max-height: 4rem;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -2421,6 +2531,10 @@ video {
     text-align: center;
   }
 
+  .md\:text-right {
+    text-align: right;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2428,6 +2542,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .lg\:grid {
     display: grid;
   }
@@ -2446,6 +2568,14 @@ video {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
