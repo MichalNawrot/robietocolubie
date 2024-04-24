@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        josefin: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans]
+        nunito: ['"Nunito"', ...defaultTheme.fontFamily.sans]
       },
       keyframes: {
         'sticky-nav': {
